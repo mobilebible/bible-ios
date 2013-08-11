@@ -1,0 +1,24 @@
+/*
+ * This file is part of the Raamattu project,
+ * (C)Copyright 2012 Matias Muhonen <mmu@iki.fi>
+ * See the file ''LICENSE'' for using the code.
+ */
+
+"Loading..." = "Loading...";
+
+"software_version" = "Version %@";
+
+"Search for book" = "Search for book";
+"Search from Bible" = "Search from Bible";
+
+"Add Note" = "Add Note";
+"Edit Note" = "Edit Note";
+
+"Chapter" = "Chapter";
+"All" = "All";
+
+"Done" = "Done";
+"Edit" = "Edit";
+
+"Old Testament" = "Old Testament";
+"New Testament" = "New Testament";
