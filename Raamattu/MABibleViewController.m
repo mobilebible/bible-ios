@@ -88,7 +88,7 @@
     
     /*
      * Refers to a character in the Private Use Area (PUA) in the custom FontAwesome font.
-     * When we render the character, displays a speech bubble. 
+     * When we render the character, displays a cross. 
      */
     _noteString = @"\U0000F067";
     
