@@ -32,7 +32,7 @@
     
     _translations = translations;
     
-    self.contentSizeForViewInPopover = CGSizeMake(250.0, 150.0);
+    self.preferredContentSize = CGSizeMake(320.0, 120.0);
 }
 
 - (void)didReceiveMemoryWarning
