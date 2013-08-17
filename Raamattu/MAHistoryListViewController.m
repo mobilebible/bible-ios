@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSAssert(self.bibleNavigationController, @"Bible navigation controller cannot be nil");
 }
 
 - (void)didReceiveMemoryWarning
