@@ -542,9 +542,14 @@
     UIColor *regularTextColor = [UIColor blackColor];
     UIColor *nightModeColor = [UIColor whiteColor];
     
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineHeightMultiple = regularFont.pointSize * 1.5;
+    paragraphStyle.maximumLineHeight = regularFont.pointSize * 1.5;
+    paragraphStyle.minimumLineHeight = regularFont.pointSize * 1.5;
+    
     for (NSValue *value in _boldTextRanges) {
         [attributedString setAttributes:[NSDictionary dictionaryWithObjectsAndKeys:boldFont, NSFontAttributeName,
-                                         (self.nightReadingMode ? nightModeColor : regularTextColor), NSForegroundColorAttributeName, nil] range:[value rangeValue]];
+                                         (self.nightReadingMode ? nightModeColor : regularTextColor), NSForegroundColorAttributeName, paragraphStyle, NSParagraphStyleAttributeName, nil] range:[value rangeValue]];
     }
     
     NSUInteger verse = 0;
@@ -552,7 +557,7 @@
         NSNumber *verseNumber = [NSNumber numberWithUnsignedInteger:verse];
         
         [attributedString setAttributes:[NSDictionary dictionaryWithObjectsAndKeys:regularFont, NSFontAttributeName,
-                                         (self.nightReadingMode ? nightModeColor : regularTextColor), NSForegroundColorAttributeName, nil] range:[value rangeValue]];
+                                         (self.nightReadingMode ? nightModeColor : regularTextColor), NSForegroundColorAttributeName, paragraphStyle, NSParagraphStyleAttributeName, nil] range:[value rangeValue]];
 
         if ([_selectedVerses containsObject:verseNumber]) {
             [attributedString addAttribute:NSBackgroundColorAttributeName value:[UIColor lightTextColor] range:[value rangeValue]];
@@ -565,7 +570,7 @@
     for (NSValue *value in _noteTextRanges) {
         [attributedString setAttributes:[NSDictionary dictionaryWithObjectsAndKeys:@1, kCTSuperscriptAttributeName,
                                          symbolFont, NSFontAttributeName,
-                                         (self.nightReadingMode ? nightModeColor : regularTextColor), NSForegroundColorAttributeName, nil]
+                                         (self.nightReadingMode ? nightModeColor : regularTextColor), NSForegroundColorAttributeName, paragraphStyle, NSParagraphStyleAttributeName, nil]
                                   range:[value rangeValue]];
     }
 }
