@@ -660,7 +660,7 @@
         self.view.backgroundColor = MABibleDefaultBackgroundColor;
         
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+            self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
             self.toolbar.barStyle = UIBarStyleDefault;
         }
     }
