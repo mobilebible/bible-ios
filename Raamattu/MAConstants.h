@@ -20,9 +20,9 @@ typedef enum {
     MABookTitleCount
 } MABookTitle;
 
-#define MABibleDefaultBackgroundColor [UIColor colorWithRed:0.87450980392157 \
-                                                green:0.87450980392157 \
-                                                blue:0.81960784313725 \
+#define MABibleDefaultBackgroundColor [UIColor colorWithRed:0.95686274509804 \
+                                                green:0.95294117647059 \
+                                                blue:0.93725490196078 \
                                                 alpha:1];
 
 #define MABibleNightModeBackgroundColor [UIColor colorWithRed:0.2078431372549 \
