@@ -102,6 +102,8 @@
     [self.textView setEditable:NO];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        self.textView.textContainerInset = UIEdgeInsetsMake(8, 20, 0, 20);
+        
         UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                                   target:nil
                                                                                   action:nil];
@@ -115,6 +117,8 @@
          flex,
          self.nextChapterButtonItem,
          flex]];
+    } else {
+        self.textView.textContainerInset = UIEdgeInsetsMake(8, 76, 0, 76);
     }
 }
 

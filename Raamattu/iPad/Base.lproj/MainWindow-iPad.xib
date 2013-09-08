@@ -17,7 +17,7 @@
         </customObject>
         <viewController id="46" customClass="MAChapterListViewController">
             <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="47">
-                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="48">
                     <size key="itemSize" width="50" height="50"/>
@@ -51,16 +51,13 @@
                 <viewControllerLayoutGuide type="bottom" id="tXl-SC-XM1"/>
             </layoutGuides>
             <view key="view" contentMode="scaleToFill" id="27" customClass="UIImageView">
-                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                <rect key="frame" x="0.0" y="44" width="768" height="980"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="296">
-                        <rect key="frame" x="89" y="0.0" width="603" height="936"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="936"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="603" id="344"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
@@ -161,11 +158,7 @@
                     <constraint firstItem="356" firstAttribute="bottom" secondItem="350" secondAttribute="bottom" id="478"/>
                     <constraint firstItem="501" firstAttribute="trailing" secondItem="27" secondAttribute="trailing" id="503"/>
                     <constraint firstItem="501" firstAttribute="leading" secondItem="27" secondAttribute="leading" id="505"/>
-                    <constraint firstItem="296" firstAttribute="top" secondItem="27" secondAttribute="top" id="512"/>
                     <constraint firstItem="501" firstAttribute="bottom" secondItem="27" secondAttribute="bottom" id="513"/>
-                    <constraint firstItem="501" firstAttribute="top" secondItem="296" secondAttribute="bottom" id="514"/>
-                    <constraint firstItem="296" firstAttribute="leading" secondItem="27" secondAttribute="leading" constant="89" id="525"/>
-                    <constraint firstAttribute="trailing" secondItem="296" secondAttribute="trailing" constant="76" id="593"/>
                     <constraint firstItem="601" firstAttribute="trailing" secondItem="350" secondAttribute="trailing" id="607"/>
                     <constraint firstItem="601" firstAttribute="leading" secondItem="350" secondAttribute="leading" id="608"/>
                     <constraint firstItem="601" firstAttribute="leading" secondItem="27" secondAttribute="leading" constant="18" id="610"/>
@@ -175,6 +168,10 @@
                     <constraint firstItem="601" firstAttribute="top" secondItem="27" secondAttribute="top" constant="310" id="735"/>
                     <constraint firstItem="611" firstAttribute="bottom" secondItem="601" secondAttribute="bottom" id="751"/>
                     <constraint firstItem="611" firstAttribute="top" secondItem="601" secondAttribute="top" id="752"/>
+                    <constraint firstItem="296" firstAttribute="bottom" secondItem="501" secondAttribute="top" id="14e-le-w3s"/>
+                    <constraint firstItem="296" firstAttribute="top" secondItem="27" secondAttribute="top" id="4wo-nx-4rS"/>
+                    <constraint firstItem="296" firstAttribute="leading" secondItem="501" secondAttribute="leading" id="cn1-lz-SVA"/>
+                    <constraint firstItem="296" firstAttribute="trailing" secondItem="501" secondAttribute="trailing" id="h6m-H1-xbE"/>
                 </constraints>
             </view>
             <extendedEdge key="edgesForExtendedLayout"/>
@@ -207,7 +204,7 @@
             <extendedEdge key="edgesForExtendedLayout"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <nil key="simulatedDestinationMetrics"/>
             <tabBar key="tabBar" contentMode="scaleToFill" id="10">
@@ -494,7 +491,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <mutableString key="text">Includes the year 1938 Finnish Bible translation and NET (New English Translation). Scripture quoted by permission. All scripture quotations, unless otherwise indicated, are taken from the NET Bible® copyright ©1996-2006 by Biblical Studies Press, L.L.C. www.bible.org All rights reserved. This material is available in its entirety as a free download or online web use at http://www.netbible.org/ .
+                        <string key="text">Includes the year 1938 Finnish Bible translation and NET (New English Translation). Scripture quoted by permission. All scripture quotations, unless otherwise indicated, are taken from the NET Bible® copyright ©1996-2006 by Biblical Studies Press, L.L.C. www.bible.org All rights reserved. This material is available in its entirety as a free download or online web use at http://www.netbible.org/ .
 
 We thank the following organizations for their work utilized in this application:
 
@@ -503,7 +500,7 @@ Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome
 
 The source code for this program is available on Github:
 
-https://github.com/mobilebible/bible-ios</mutableString>
+https://github.com/mobilebible/bible-ios</string>
                         <color key="textColor" red="0.45142663039999997" green="0.41990002980000002" blue="0.4435449803" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -657,7 +654,7 @@ https://github.com/mobilebible/bible-ios</mutableString>
         <image name="info.png" width="30" height="30"/>
         <image name="ipad-next-chapter.png" width="66" height="104"/>
         <image name="ipad-nightmode.png" width="20" height="20"/>
-        <image name="ipad-notes.png" width="20" height="20"/>
+        <image name="ipad-notes.png" width="30" height="30"/>
         <image name="ipad-prev-chapter.png" width="66" height="104"/>
     </resources>
 </document>

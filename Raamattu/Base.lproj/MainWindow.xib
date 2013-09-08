@@ -51,11 +51,11 @@
                 <viewControllerLayoutGuide type="bottom" id="aT3-LY-mFQ"/>
             </layoutGuides>
             <view key="view" contentMode="scaleToFill" id="27" customClass="UIImageView">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="296">
-                        <rect key="frame" x="20" y="0.0" width="280" height="392"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="392"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -72,10 +72,10 @@
                     <constraint firstItem="290" firstAttribute="trailing" secondItem="27" secondAttribute="trailing" id="292"/>
                     <constraint firstItem="290" firstAttribute="leading" secondItem="27" secondAttribute="leading" id="293"/>
                     <constraint firstItem="290" firstAttribute="bottom" secondItem="27" secondAttribute="bottom" id="295"/>
-                    <constraint firstItem="296" firstAttribute="top" secondItem="27" secondAttribute="top" id="298"/>
-                    <constraint firstItem="296" firstAttribute="bottom" secondItem="290" secondAttribute="top" id="300"/>
-                    <constraint firstAttribute="trailing" secondItem="296" secondAttribute="trailing" constant="20" symbolic="YES" id="303"/>
-                    <constraint firstItem="296" firstAttribute="leading" secondItem="27" secondAttribute="leading" constant="20" symbolic="YES" id="304"/>
+                    <constraint firstItem="296" firstAttribute="bottom" secondItem="290" secondAttribute="top" id="B9H-FU-WgC"/>
+                    <constraint firstItem="296" firstAttribute="trailing" secondItem="290" secondAttribute="trailing" id="EnK-B4-juk"/>
+                    <constraint firstItem="296" firstAttribute="top" secondItem="27" secondAttribute="top" id="ekM-4t-kKA"/>
+                    <constraint firstItem="296" firstAttribute="leading" secondItem="290" secondAttribute="leading" id="h2r-Qv-W68"/>
                 </constraints>
             </view>
             <extendedEdge key="edgesForExtendedLayout"/>
@@ -104,7 +104,7 @@
             <extendedEdge key="edgesForExtendedLayout"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <nil key="simulatedDestinationMetrics"/>
             <tabBar key="tabBar" contentMode="scaleToFill" id="10">
@@ -391,7 +391,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <mutableString key="text">Includes the year 1938 Finnish Bible translation and NET (New English Translation). Scripture quoted by permission. All scripture quotations, unless otherwise indicated, are taken from the NET Bible® copyright ©1996-2006 by Biblical Studies Press, L.L.C. www.bible.org All rights reserved. This material is available in its entirety as a free download or online web use at http://www.netbible.org/ .
+                        <string key="text">Includes the year 1938 Finnish Bible translation and NET (New English Translation). Scripture quoted by permission. All scripture quotations, unless otherwise indicated, are taken from the NET Bible® copyright ©1996-2006 by Biblical Studies Press, L.L.C. www.bible.org All rights reserved. This material is available in its entirety as a free download or online web use at http://www.netbible.org/ .
 
 We thank the following organizations for their work utilized in this application:
 
@@ -400,7 +400,7 @@ Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome
 
 The source code for this program is available on Github:
 
-https://github.com/mobilebible/bible-ios</mutableString>
+https://github.com/mobilebible/bible-ios</string>
                         <color key="textColor" red="0.45142663039999997" green="0.41990002980000002" blue="0.4435449803" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
