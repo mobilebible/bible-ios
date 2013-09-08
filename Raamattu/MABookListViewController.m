@@ -365,19 +365,18 @@ typedef enum {
 - (MABook *)bookForIndexPath:(NSIndexPath *)indexPath
 {
     MABook *book = nil;
+    NSUInteger index = 0;
     
-    switch (indexPath.section) {
-        case kMaBookSectionOldTestament:
-            book = [self.books objectAtIndex:indexPath.row];
-            break;
-            
-        case kMaBookSectionNewTestament:
-            book = [self.books objectAtIndex:indexPath.row + 39];
-            break;
-            
-        default:
-            break;
+    if (indexPath.section == kMaBookSectionOldTestament) {
+        index = indexPath.row;
+    } else if (indexPath.section == kMaBookSectionNewTestament) {
+        index = indexPath.row + 39;
     }
+    
+    if (index < [self.books count]) {
+        book = [self.books objectAtIndex:index];
+    }
+    
     return book;
 }
 
