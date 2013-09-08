@@ -503,10 +503,10 @@
     _verseStartPositions = [[NSMutableArray alloc] init];
     
     /*
-     * XXX: The text view has some padding on the top, which means
-     * we need to address that in the verse position calculation.
+     *  The textContainerInset property defines the inset of the text within
+     *  the content area. We need to address that in the verse position calculation.
      */
-    CGFloat y = 8;
+    CGFloat y = self.textView.textContainerInset.top;
     for (NSNumber *r in _verseRanges) {
         NSRange verseRange = [r rangeValue];
         
