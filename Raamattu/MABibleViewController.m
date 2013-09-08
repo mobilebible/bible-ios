@@ -94,8 +94,6 @@
     
     _selectedVerses = [[NSMutableOrderedSet alloc] init];
     
-    self.textView.backgroundColor = [UIColor clearColor];
-    
     [self.view addGestureRecognizer:self.swipeLeftRecognizer];
     [self.view addGestureRecognizer:self.swipeRightRecognizer];
     [self.textView addGestureRecognizer:self.pinchGestureRecognizer];
@@ -651,6 +649,7 @@
     
     if (_nightReadingMode) {
         self.view.backgroundColor = MABibleNightModeBackgroundColor;
+        self.textView.backgroundColor = MABibleNightModeBackgroundColor;
         
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -658,6 +657,7 @@
         }
     } else {
         self.view.backgroundColor = MABibleDefaultBackgroundColor;
+        self.textView.backgroundColor = MABibleDefaultBackgroundColor;
         
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
