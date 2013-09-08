@@ -269,7 +269,18 @@
 {
     if (!_database) {
         _database = [FMDatabase databaseWithPath:self.databasePath];
-        [_database open];
+        if (![_database open]) {
+            NSMutableString *message = [[NSMutableString alloc] init];
+            [message appendString:NSLocalizedString(@"Bible is not available: ", @"")];
+            [message appendString:[[_database lastError] localizedDescription]];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"")
+                                                        message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+       }
     }
     return _database;
 }
