@@ -3,9 +3,6 @@ a simple bible reader primarily designed for reading the Finnish Bible, but,
 there is nothing preventing to use the app for other languages (currently
 we ship the NET translation besides the Finnish translation).
 
-Note that the application was significantly updated for iOS 7. If you are
-interested in the iOS 6 compatible version, check the ios6 branch.
-
 The following features have been implemented:
 * Support for the iPhone/iPad UI idioms
 * Localization. New localizations can be added with the standard Apple conventions.
