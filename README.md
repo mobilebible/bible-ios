@@ -15,9 +15,9 @@ The following features have been implemented:
 * Ability to add and edit notes. Notes can be attached to bible verses
 * Night mode for bible reading
 
-![](http://muhonen.net/project/Raamattu/raamattu-ipad.png)
+![](https://raw.github.com/mobilebible/bible-ios/master/Extra/raamattu-ipad.png)
 
-![](http://muhonen.net/project/Raamattu/raamattu-iphone.png)
+![](https://raw.github.com/mobilebible/bible-ios/master/Extra/raamattu-iphone.png)
 
 The code can and the provided graphics assets can be freely used within
 the BSD license (see the file LICENSE for more detail) but please note
