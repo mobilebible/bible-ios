@@ -148,7 +148,7 @@ typedef enum {
             
             MABook *book = [[self.bookService booksMappedByIdentifier] objectForKey:[NSNumber numberWithUnsignedInteger:self.note.bookIdentifier]];
             
-            cell.textLabel.text = [NSString stringWithFormat:@"%@ %lu:%@", book.title, (self.note.chapterIdentifier + 1), [self.note verseList]];
+            cell.textLabel.text = [NSString stringWithFormat:@"%@ %i:%@", book.title, (self.note.chapterIdentifier + 1), [self.note verseList]];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
             return cell;

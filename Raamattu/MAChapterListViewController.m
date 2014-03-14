@@ -106,7 +106,7 @@
     
     [_chapters removeAllObjects];
     for (NSUInteger i=1, max=_book.chapterIndex.chapterCount; i <= max; i++) {
-        NSString *chapterNumber = [NSString stringWithFormat:@"%lu", (unsigned long)i];
+        NSString *chapterNumber = [NSString stringWithFormat:@"%i", i];
         [_chapters addObject:chapterNumber];
     }
     

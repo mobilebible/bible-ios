@@ -77,7 +77,7 @@
     
     MABook *book = [_books objectForKey:[[NSNumber alloc] initWithUnsignedInteger:historyItem.bookIdentifier]];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %lu", book.shortTitle, (historyItem.chapter + 1)];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %i", book.shortTitle, (historyItem.chapter + 1)];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;

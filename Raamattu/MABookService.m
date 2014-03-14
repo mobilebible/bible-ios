@@ -107,7 +107,7 @@
 
 - (MABook *)loadBookByIdentifier:(NSUInteger)bookIdentifier
 {
-    NSString *cacheKey = [NSString stringWithFormat:@"cached_book_%lu", (unsigned long)bookIdentifier];
+    NSString *cacheKey = [NSString stringWithFormat:@"cached_book_%i", bookIdentifier];
     if ([_cache objectForKey:cacheKey] != nil) {
         return [_cache objectForKey:cacheKey];
     }
@@ -227,9 +227,9 @@
     NSMutableString *settingsValue = [[NSMutableString alloc] init];
     
     for (MAHistoryItem *item in historyItemsToStore) {
-        [settingsValue appendFormat:@"%lu_%lu ",
-         (unsigned long)item.bookIdentifier,
-         (unsigned long)item.chapter];
+        [settingsValue appendFormat:@"%i_%i ",
+         item.bookIdentifier,
+         item.chapter];
     }
     
     NSString *finalSettingsValue = [settingsValue substringToIndex:[settingsValue length] - 1];
