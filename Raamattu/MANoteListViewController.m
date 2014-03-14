@@ -221,7 +221,7 @@ typedef enum {
             cell.textLabel.textColor = [UIColor darkGrayColor];
             
             cell.textLabel.text = [self.dateFormatter stringFromDate:note.creationDate];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %i:%@", book.shortTitle, (note.chapterIdentifier + 1), [note verseList]];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %lu:%@", book.shortTitle, (unsigned long)(note.chapterIdentifier + 1), [note verseList]];
             
             cell.selectionStyle = UITableViewCellSelectionStyleBlue;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

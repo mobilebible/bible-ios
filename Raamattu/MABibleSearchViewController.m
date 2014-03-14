@@ -96,7 +96,7 @@
 {
     MASearchResult *result = [_searchResults objectAtIndex:section];
     MABook *book = [_books objectForKey:[[NSNumber alloc] initWithUnsignedInteger:result.book]];
-    NSString *title = [NSString stringWithFormat:@"%@ %i:%i", book.shortTitle, (result.chapter + 1), (result.verse + 1)];
+    NSString *title = [NSString stringWithFormat:@"%@ %lu:%lu", book.shortTitle, (unsigned long)(result.chapter + 1), (unsigned long)(result.verse + 1)];
     
     return title;
 }

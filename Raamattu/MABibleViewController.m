@@ -338,7 +338,7 @@
     /*
      * Select the verse.
      */
-    NSNumber *verseNumber = [NSNumber numberWithInt:(verse)];
+    NSNumber *verseNumber = [NSNumber numberWithUnsignedInteger:verse];
 
     if ([_selectedVerses containsObject:verseNumber]) {
         [_selectedVerses removeObject:verseNumber];
@@ -439,7 +439,7 @@
     NSUInteger verseRangeStart, verseRangeLength;
     
     for (NSString *verse in chapter.verses) {
-        NSString *verseNumberString = [[NSString alloc] initWithFormat:@"%i", verseNumber];
+        NSString *verseNumberString = [[NSString alloc] initWithFormat:@"%lu", (unsigned long)verseNumber];
         NSRange boldTextRange = NSMakeRange([_content length], [verseNumberString length]);
         verseRangeStart = boldTextRange.location;
         
@@ -620,7 +620,7 @@
     _chapter = chapter;
     self.verse = 0;
     
-    self.navigationItem.title = [NSString stringWithFormat:@"%@ %i", self.book.shortTitle, (_chapter + 1)];
+    self.navigationItem.title = [NSString stringWithFormat:@"%@ %lu", self.book.shortTitle, (unsigned long)(_chapter + 1)];
 }
 
 - (NSUInteger)chapter
@@ -781,9 +781,9 @@
             if ([_selectedVerses containsObject:[NSNumber numberWithUnsignedInteger:(i - 1)]]) {
                 if (firstVerse) {
                     firstVerse = NO;
-                    [textToShare appendFormat:@"%@ %i : ", _book.shortTitle, (chapter.identifier + 1)];
+                    [textToShare appendFormat:@"%@ %lu : ", _book.shortTitle, (unsigned long)(chapter.identifier + 1)];
                 }
-                [textToShare appendFormat:@"%i. %@ ", i, verse];
+                [textToShare appendFormat:@"%lu. %@ ", (unsigned long)i, verse];
             }
             i++;
         }
@@ -792,9 +792,9 @@
         NSUInteger i=1;
         for (NSString *verse in chapter.verses) {
             if (i == 1) {
-                [textToShare appendFormat:@"%@ %i", _book.shortTitle, (chapter.identifier + 1)];
+                [textToShare appendFormat:@"%@ %lu", _book.shortTitle, (unsigned long)(chapter.identifier + 1)];
             }
-            [textToShare appendFormat:@"\n\n%i. %@", i, verse];
+            [textToShare appendFormat:@"\n\n%lu. %@", (unsigned long)i, verse];
             i++;
         }
     }
@@ -808,7 +808,7 @@
     
     UIPrintInfo *printInfo = [UIPrintInfo printInfo];
     printInfo.outputType = UIPrintInfoOutputGeneral;
-    printInfo.jobName = [NSString stringWithFormat:@"%@ %i", _book.title, (chapter.identifier + 1)];
+    printInfo.jobName = [NSString stringWithFormat:@"%@ %lu", _book.title, (unsigned long)(chapter.identifier + 1)];
     
     NSArray *activityItems = @[textToShare, printFormatter, printInfo];
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
