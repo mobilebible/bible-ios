@@ -26,7 +26,7 @@ static NSInteger fontSizeDuringRuntime;
     NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
     self.historyItems = [standardUserDefaults stringForKey:MASettingsKeyHistoryItems];
     self.fontSize = fontSizeDuringRuntime;
-    self.bibleTranslation = [standardUserDefaults integerForKey:MASettingsKeyBibleTranslation];
+    self.bibleTranslation = (int)[standardUserDefaults integerForKey:MASettingsKeyBibleTranslation];
     self.nightReadingMode = [standardUserDefaults boolForKey:MASettingsKeyNightReadingMode];
 }
 

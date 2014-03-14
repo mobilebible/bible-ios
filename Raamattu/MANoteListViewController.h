@@ -31,7 +31,7 @@
 @property (strong,nonatomic) IBOutlet MANoteEditViewController *noteEditViewController;
 @property (nonatomic,assign) NSUInteger bookIdentifier;
 @property (nonatomic,assign) NSUInteger chapter;
-@property (nonatomic,assign) NSUInteger translation;
+@property (nonatomic,assign) int translation;
 @property (nonatomic,assign) BOOL resetOnViewWillAppear;
 
 - (IBAction)toggleEditable:(id)sender;

@@ -152,20 +152,20 @@ static NSInteger sortNotes(id n1, id n2, void *keyForSorting)
 {
     if (note.identifier > 0) {
         [self.database executeUpdate:@"UPDATE note SET translation_num=?,book_num=?,chapter_num=?,content=? WHERE note_num=?",
-         [NSNumber numberWithUnsignedInt:note.translationIdentifier],
-         [NSNumber numberWithUnsignedInt:note.bookIdentifier],
-         [NSNumber numberWithUnsignedInt:note.chapterIdentifier],
+         [NSNumber numberWithUnsignedInteger:note.translationIdentifier],
+         [NSNumber numberWithUnsignedInteger:note.bookIdentifier],
+         [NSNumber numberWithUnsignedInteger:note.chapterIdentifier],
          note.text,
-         [NSNumber numberWithUnsignedInt:note.identifier]];
+         [NSNumber numberWithUnsignedInteger:note.identifier]];
     } else {
         int noteIdentifier = [self.database intForQuery:@"SELECT MAX(note_num) FROM note"] + 1;
         
         if (![self.database executeUpdate:@"INSERT INTO note(note_num,created,translation_num,book_num,chapter_num,content) VALUES(?,?,?,?,?,?)",
-              [NSNumber numberWithUnsignedInt:noteIdentifier],
+              [NSNumber numberWithUnsignedInteger:noteIdentifier],
               [NSDate date],
-              [NSNumber numberWithUnsignedInt:note.translationIdentifier],
-              [NSNumber numberWithUnsignedInt:note.bookIdentifier],
-              [NSNumber numberWithUnsignedInt:note.chapterIdentifier],
+              [NSNumber numberWithUnsignedInteger:note.translationIdentifier],
+              [NSNumber numberWithUnsignedInteger:note.bookIdentifier],
+              [NSNumber numberWithUnsignedInteger:note.chapterIdentifier],
               note.text]) {
             return;
         }
@@ -182,10 +182,10 @@ static NSInteger sortNotes(id n1, id n2, void *keyForSorting)
 - (void)remoteNote:(MANote *)note
 {
     [self.database executeUpdate:@"DELETE FROM note_verse WHERE note_num=?",
-     [NSNumber numberWithUnsignedInt:note.identifier]];
+     [NSNumber numberWithUnsignedInteger:note.identifier]];
     
     [self.database executeUpdate:@"DELETE FROM note WHERE note_num=?",
-     [NSNumber numberWithUnsignedInt:note.identifier]];
+     [NSNumber numberWithUnsignedInteger:note.identifier]];
     
     note.identifier = 0;
 }

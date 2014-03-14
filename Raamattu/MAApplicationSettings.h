@@ -10,7 +10,7 @@
 
 @property (nonatomic,strong) NSString *historyItems;
 @property (nonatomic,assign) NSInteger fontSize;
-@property (nonatomic,assign) NSInteger bibleTranslation;
+@property (nonatomic,assign) int bibleTranslation;
 @property (nonatomic,assign) BOOL nightReadingMode;
 
 - (void)storeSettings;

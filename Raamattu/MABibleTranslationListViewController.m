@@ -76,7 +76,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [self.bookService translationNameByIdentifier:[translation unsignedIntegerValue]];
+    cell.textLabel.text = [self.bookService translationNameByIdentifier:[translation intValue]];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     MAApplicationSettings *settings = [MAApplicationSettings sharedApplicationSettings];
@@ -102,7 +102,7 @@
 {
     NSNumber *translation = [_translations objectAtIndex:indexPath.section];
     
-    self.bookService.translation = [translation unsignedIntegerValue];
+    self.bookService.translation = [translation intValue];
     
     MAApplicationSettings *settings = [MAApplicationSettings sharedApplicationSettings];
     settings.bibleTranslation = self.bookService.translation;
