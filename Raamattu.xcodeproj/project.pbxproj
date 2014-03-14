@@ -11,15 +11,10 @@
 		6007821B163FFC1400C00D55 /* MATechnicalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6007821A163FFC1400C00D55 /* MATechnicalInformationViewController.m */; };
 		600AC7071649540700BFF562 /* MainWindow-iPad.strings in Resources */ = {isa = PBXBuildFile; fileRef = 600AC7051649540700BFF562 /* MainWindow-iPad.strings */; };
 		600CAB5F1643FB9300F2A8D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7A89163A8273004867AE /* Foundation.framework */; };
-		600CAB7F1643FD9F00F2A8D7 /* FMDatabase.h in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB6E1643FD4900F2A8D7 /* FMDatabase.h */; };
 		600CAB801643FD9F00F2A8D7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB6F1643FD4900F2A8D7 /* FMDatabase.m */; };
-		600CAB811643FD9F00F2A8D7 /* FMDatabaseAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB701643FD4900F2A8D7 /* FMDatabaseAdditions.h */; };
 		600CAB821643FD9F00F2A8D7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB711643FD4900F2A8D7 /* FMDatabaseAdditions.m */; };
-		600CAB831643FD9F00F2A8D7 /* FMDatabasePool.h in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB721643FD4900F2A8D7 /* FMDatabasePool.h */; };
 		600CAB841643FD9F00F2A8D7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB731643FD4900F2A8D7 /* FMDatabasePool.m */; };
-		600CAB851643FD9F00F2A8D7 /* FMDatabaseQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB741643FD4900F2A8D7 /* FMDatabaseQueue.h */; };
 		600CAB861643FD9F00F2A8D7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB751643FD4900F2A8D7 /* FMDatabaseQueue.m */; };
-		600CAB871643FD9F00F2A8D7 /* FMResultSet.h in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB771643FD4900F2A8D7 /* FMResultSet.h */; };
 		600CAB881643FD9F00F2A8D7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB781643FD4900F2A8D7 /* FMResultSet.m */; };
 		600F3444163ECF3300258AAC /* MAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600F3443163ECF3300258AAC /* MAAboutViewController.m */; };
 		6014B212163C805600F108F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6014B214163C805600F108F0 /* Localizable.strings */; };
@@ -634,15 +629,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600CAB7F1643FD9F00F2A8D7 /* FMDatabase.h in Sources */,
 				600CAB801643FD9F00F2A8D7 /* FMDatabase.m in Sources */,
-				600CAB811643FD9F00F2A8D7 /* FMDatabaseAdditions.h in Sources */,
 				600CAB821643FD9F00F2A8D7 /* FMDatabaseAdditions.m in Sources */,
-				600CAB831643FD9F00F2A8D7 /* FMDatabasePool.h in Sources */,
 				600CAB841643FD9F00F2A8D7 /* FMDatabasePool.m in Sources */,
-				600CAB851643FD9F00F2A8D7 /* FMDatabaseQueue.h in Sources */,
 				600CAB861643FD9F00F2A8D7 /* FMDatabaseQueue.m in Sources */,
-				600CAB871643FD9F00F2A8D7 /* FMResultSet.h in Sources */,
 				600CAB881643FD9F00F2A8D7 /* FMResultSet.m in Sources */,
 				604D7A94163A8274004867AE /* main.m in Sources */,
 				604D7A98163A8274004867AE /* MAAppDelegate.m in Sources */,
