@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/mobilebible//bible-ios.png?branch=master)](https://travis-ci.org/mobilebible/bible-ios)
+
 This is the source code for the App Store distributed Raamattu+ app for iOS. It is
 a simple bible reader primarily designed for reading the Finnish Bible, but,
 there is nothing preventing to use the app for other languages (currently
