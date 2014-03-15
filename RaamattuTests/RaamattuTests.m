@@ -84,36 +84,36 @@ static const NSUInteger chapterCountRaamattu1938[] = {
     
     MABook *currentBook = [_service loadBookByIdentifier:[bookIdentifier unsignedIntValue]];
     
-    NSLog(@"Check book %i - %@", currentBook.identifier, currentBook.title);
+    NSLog(@"Check book %lu - %@", (unsigned long)currentBook.identifier, currentBook.title);
     
     if (_service.translation == MABibleTranslationNET) {
-        STAssertTrue([currentBook.chapters count] == chapterCountNETBible[currentBook.identifier], @"Incorrect chapter count, book %i", currentBook.identifier);
+        XCTAssertTrue([currentBook.chapters count] == chapterCountNETBible[currentBook.identifier], @"Incorrect chapter count, book %lu", (unsigned long)currentBook.identifier);
     } else if (_service.translation == MABibleTranslationRaamattu1938) {
-        STAssertTrue([currentBook.chapters count] == chapterCountRaamattu1938[currentBook.identifier], @"Incorrect chapter count, book %i", currentBook.identifier);
+        XCTAssertTrue([currentBook.chapters count] == chapterCountRaamattu1938[currentBook.identifier], @"Incorrect chapter count, book %lu", (unsigned long)currentBook.identifier);
     }
     
     NSString *currentVerse = nil, *previousVerse = nil;
     
     for (MAChapter *chapter in currentBook.chapters) {
-        STAssertTrue([chapter.verses count] > 0,
-                     @"Incorrect verse count. Book %i chapter %i has %i verses",
-                     currentBook.identifier,
-                     chapter.identifier,
-                     [chapter.verses count]);
+        XCTAssertTrue([chapter.verses count] > 0,
+                     @"Incorrect verse count. Book %lu chapter %lu has %lu verses",
+                     (unsigned long)currentBook.identifier,
+                     (unsigned long)chapter.identifier,
+                     (unsigned long)[chapter.verses count]);
         
         NSUInteger verseIndex = 0;
         for (NSString *verse in chapter.verses) {
             previousVerse = currentVerse;
             currentVerse = verse;
             
-            STAssertTrue(![currentVerse isEqualToString:previousVerse], @"Verses are equal %@ - %@", previousVerse, currentVerse);
+            XCTAssertTrue(![currentVerse isEqualToString:previousVerse], @"Verses are equal %@ - %@", previousVerse, currentVerse);
             
-            STAssertTrue([verse length] > 5, @"Verse must be at least 6 characters long");
+            XCTAssertTrue([verse length] > 5, @"Verse must be at least 6 characters long");
             
-            STAssertTrue([verse length] < 500, @"Verse must be less than 500 characters long. Book %i, chapter %i, verse %i: %@",
-                         currentBook.identifier,
-                         chapter.identifier,
-                         verseIndex,
+            XCTAssertTrue([verse length] < 500, @"Verse must be less than 500 characters long. Book %lu, chapter %lu, verse %lu: %@",
+                         (unsigned long)currentBook.identifier,
+                         (unsigned long)chapter.identifier,
+                         (unsigned long)verseIndex,
                          verse);
             
             verseIndex++;
@@ -148,7 +148,7 @@ static const NSUInteger chapterCountRaamattu1938[] = {
         timedOut = ([tick compare:timeoutDate] == NSOrderedDescending);
     }
     
-    STAssertFalse(timedOut, @"Book retrieval timed out");
+    XCTAssertFalse(timedOut, @"Book retrieval timed out");
     
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:kMaBookLoadingCompletedNotification

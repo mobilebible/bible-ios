@@ -10,7 +10,6 @@
 		60078218163FE9C900C00D55 /* MALoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60078217163FE9C900C00D55 /* MALoadingView.m */; };
 		6007821B163FFC1400C00D55 /* MATechnicalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6007821A163FFC1400C00D55 /* MATechnicalInformationViewController.m */; };
 		600AC7071649540700BFF562 /* MainWindow-iPad.strings in Resources */ = {isa = PBXBuildFile; fileRef = 600AC7051649540700BFF562 /* MainWindow-iPad.strings */; };
-		600CAB5F1643FB9300F2A8D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7A89163A8273004867AE /* Foundation.framework */; };
 		600CAB801643FD9F00F2A8D7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB6F1643FD4900F2A8D7 /* FMDatabase.m */; };
 		600CAB821643FD9F00F2A8D7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB711643FD4900F2A8D7 /* FMDatabaseAdditions.m */; };
 		600CAB841643FD9F00F2A8D7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CAB731643FD4900F2A8D7 /* FMDatabasePool.m */; };
@@ -39,7 +38,6 @@
 		604D7A94163A8274004867AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D7A93163A8274004867AE /* main.m */; };
 		604D7A98163A8274004867AE /* MAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D7A97163A8274004867AE /* MAAppDelegate.m */; };
 		604D7AA4163A8274004867AE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604D7AA2163A8274004867AE /* MainWindow.xib */; };
-		604D7AAC163A8274004867AE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7AAB163A8274004867AE /* SenTestingKit.framework */; };
 		604D7AAD163A8274004867AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7A87163A8273004867AE /* UIKit.framework */; };
 		604D7AAE163A8274004867AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7A89163A8273004867AE /* Foundation.framework */; };
 		604D7AB6163A8274004867AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 604D7AB4163A8274004867AE /* InfoPlist.strings */; };
@@ -69,6 +67,7 @@
 		60E2BA3316A4294200FA6DE5 /* MANoteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E2BA3216A4294200FA6DE5 /* MANoteService.m */; };
 		60E2BA3916A4486900FA6DE5 /* MANote.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E2BA3816A4486900FA6DE5 /* MANote.m */; };
 		60E2BA3C16A44FFE00FA6DE5 /* MANoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E2BA3B16A44FFE00FA6DE5 /* MANoteListViewController.m */; };
+		60E6D73618D445130069DD80 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E6D73518D445130069DD80 /* XCTest.framework */; };
 		60E9804B163C128D0076764B /* MABookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E9804A163C128D0076764B /* MABookListViewController.m */; };
 		60E98052163C32DC0076764B /* MAChapterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E98051163C32DC0076764B /* MAChapterListViewController.m */; };
 		60F9FE5816B0367C00CA9BA6 /* iphone-nightmode.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F9FE5616B0367C00CA9BA6 /* iphone-nightmode.png */; };
@@ -87,18 +86,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		600CAB5C1643FB9300F2A8D7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		60078216163FE9C800C00D55 /* MALoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MALoadingView.h; sourceTree = "<group>"; };
 		60078217163FE9C900C00D55 /* MALoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MALoadingView.m; sourceTree = "<group>"; };
@@ -106,7 +93,6 @@
 		6007821A163FFC1400C00D55 /* MATechnicalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MATechnicalInformationViewController.m; sourceTree = "<group>"; };
 		600AC7061649540700BFF562 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = "iPad/fi.lproj/MainWindow-iPad.strings"; sourceTree = "<group>"; };
 		600AC7091649541400BFF562 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "iPad/en.lproj/MainWindow-iPad.strings"; sourceTree = "<group>"; };
-		600CAB5E1643FB9300F2A8D7 /* libSqlite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSqlite.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		600CAB6E1643FD4900F2A8D7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = Externals/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		600CAB6F1643FD4900F2A8D7 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = Externals/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		600CAB701643FD4900F2A8D7 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = Externals/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -155,8 +141,7 @@
 		604D7A95163A8274004867AE /* Raamattu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Raamattu-Prefix.pch"; sourceTree = "<group>"; };
 		604D7A96163A8274004867AE /* MAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAAppDelegate.h; sourceTree = "<group>"; };
 		604D7A97163A8274004867AE /* MAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAAppDelegate.m; sourceTree = "<group>"; };
-		604D7AAA163A8274004867AE /* RaamattuTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaamattuTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		604D7AAB163A8274004867AE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		604D7AAA163A8274004867AE /* RaamattuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaamattuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		604D7AB3163A8274004867AE /* RaamattuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaamattuTests-Info.plist"; sourceTree = "<group>"; };
 		604D7AB5163A8274004867AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		604D7AB7163A8274004867AE /* RaamattuTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaamattuTests.h; sourceTree = "<group>"; };
@@ -197,6 +182,7 @@
 		60E2BA3816A4486900FA6DE5 /* MANote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANote.m; sourceTree = "<group>"; };
 		60E2BA3A16A44FFE00FA6DE5 /* MANoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANoteListViewController.h; sourceTree = "<group>"; };
 		60E2BA3B16A44FFE00FA6DE5 /* MANoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANoteListViewController.m; sourceTree = "<group>"; };
+		60E6D73518D445130069DD80 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60E98049163C128D0076764B /* MABookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABookListViewController.h; sourceTree = "<group>"; };
 		60E9804A163C128D0076764B /* MABookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABookListViewController.m; sourceTree = "<group>"; };
 		60E98050163C32DC0076764B /* MAChapterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAChapterListViewController.h; sourceTree = "<group>"; };
@@ -208,14 +194,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		600CAB5B1643FB9300F2A8D7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				600CAB5F1643FB9300F2A8D7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		604D7A80163A8273004867AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,7 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				604D7AAC163A8274004867AE /* SenTestingKit.framework in Frameworks */,
+				60E6D73618D445130069DD80 /* XCTest.framework in Frameworks */,
 				604D7AAD163A8274004867AE /* UIKit.framework in Frameworks */,
 				604D7AAE163A8274004867AE /* Foundation.framework in Frameworks */,
 			);
@@ -314,8 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				604D7A83163A8273004867AE /* Raamattu.app */,
-				604D7AAA163A8274004867AE /* RaamattuTests.octest */,
-				600CAB5E1643FB9300F2A8D7 /* libSqlite.a */,
+				604D7AAA163A8274004867AE /* RaamattuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -323,6 +300,7 @@
 		604D7A86163A8273004867AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60E6D73518D445130069DD80 /* XCTest.framework */,
 				602A664E17DCEF6500AD7DF7 /* libsqlite3.dylib */,
 				604295F7163BF380005AA33D /* MobileCoreServices.framework */,
 				60228586163BE368009EB43F /* CoreText.framework */,
@@ -332,7 +310,6 @@
 				604D7A87163A8273004867AE /* UIKit.framework */,
 				604D7A89163A8273004867AE /* Foundation.framework */,
 				604D7A8B163A8273004867AE /* CoreGraphics.framework */,
-				604D7AAB163A8274004867AE /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -473,23 +450,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		600CAB5D1643FB9300F2A8D7 /* Sqlite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 600CAB671643FB9300F2A8D7 /* Build configuration list for PBXNativeTarget "Sqlite" */;
-			buildPhases = (
-				600CAB5A1643FB9300F2A8D7 /* Sources */,
-				600CAB5B1643FB9300F2A8D7 /* Frameworks */,
-				600CAB5C1643FB9300F2A8D7 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Sqlite;
-			productName = Sqlite;
-			productReference = 600CAB5E1643FB9300F2A8D7 /* libSqlite.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		604D7A82163A8273004867AE /* Raamattu */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 604D7ABC163A8274004867AE /* Build configuration list for PBXNativeTarget "Raamattu" */;
@@ -523,8 +483,8 @@
 			);
 			name = RaamattuTests;
 			productName = RaamattuTests;
-			productReference = 604D7AAA163A8274004867AE /* RaamattuTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 604D7AAA163A8274004867AE /* RaamattuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -533,6 +493,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MA;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Matias Muhonen";
 			};
@@ -552,7 +513,6 @@
 			targets = (
 				604D7A82163A8273004867AE /* Raamattu */,
 				604D7AA9163A8274004867AE /* RaamattuTests */,
-				600CAB5D1643FB9300F2A8D7 /* Sqlite */,
 			);
 		};
 /* End PBXProject section */
@@ -618,13 +578,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		600CAB5A1643FB9300F2A8D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		604D7A7F163A8273004867AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -735,30 +688,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		600CAB681643FB9300F2A8D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/Sqlite.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sqlite/Sqlite-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		600CAB691643FB9300F2A8D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/Sqlite.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sqlite/Sqlite-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		604D7ABA163A8274004867AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -861,6 +790,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Raamattu/Raamattu-Prefix.pch";
@@ -868,7 +799,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/**";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -880,6 +810,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Raamattu/Raamattu-Prefix.pch";
@@ -887,22 +819,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/**";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		600CAB671643FB9300F2A8D7 /* Build configuration list for PBXNativeTarget "Sqlite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				600CAB681643FB9300F2A8D7 /* Debug */,
-				600CAB691643FB9300F2A8D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		604D7A7D163A8273004867AE /* Build configuration list for PBXProject "Raamattu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

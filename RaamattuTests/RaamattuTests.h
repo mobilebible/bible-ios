@@ -4,11 +4,11 @@
  * See the file ''LICENSE'' for using the code.
  */
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 @class MABookService;
 
-@interface RaamattuTests : SenTestCase {
+@interface RaamattuTests : XCTestCase {
     MABookService *_service;
     NSUInteger _notificationCount;
 }
