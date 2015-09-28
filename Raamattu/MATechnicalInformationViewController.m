@@ -12,6 +12,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     self.textView.font = [UIFont boldSystemFontOfSize:12];
 }
 
