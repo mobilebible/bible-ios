@@ -87,6 +87,12 @@
 		606EC147164030CB00253E88 /* MAHistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 606EC146164030CB00253E88 /* MAHistoryListViewController.m */; };
 		606EC14A1640317F00253E88 /* MAHistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 606EC1491640317F00253E88 /* MAHistoryItem.m */; };
 		606EC14D164036BF00253E88 /* MAApplicationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 606EC14C164036BF00253E88 /* MAApplicationSettings.m */; };
+		607A003E1BB9C97B0088E59D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F1E1BB9642400C595EB /* CFNetwork.framework */; };
+		607A003F1BB9C97F0088E59D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F201BB9642900C595EB /* AudioToolbox.framework */; };
+		607A00401BB9C9860088E59D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F221BB9643000C595EB /* AVFoundation.framework */; };
+		607A00421BB9C99F0088E59D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 607A00411BB9C99F0088E59D /* libxml2.tbd */; };
+		607A00431BB9C9AE0088E59D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F241BB9643E00C595EB /* MediaPlayer.framework */; };
+		607A00441BB9C9BD0088E59D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F261BB9647B00C595EB /* SystemConfiguration.framework */; };
 		609025ED163BD39700368F94 /* MABookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 609025EC163BD39700368F94 /* MABookService.m */; };
 		609061341BB9A602008AFA26 /* iphone-listen.png in Resources */ = {isa = PBXBuildFile; fileRef = 609061321BB9A602008AFA26 /* iphone-listen.png */; settings = {ASSET_TAGS = (); }; };
 		609061351BB9A602008AFA26 /* iphone-listen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 609061331BB9A602008AFA26 /* iphone-listen@2x.png */; settings = {ASSET_TAGS = (); }; };
@@ -238,6 +244,7 @@
 		606EC1491640317F00253E88 /* MAHistoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAHistoryItem.m; sourceTree = "<group>"; };
 		606EC14B164036BE00253E88 /* MAApplicationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAApplicationSettings.h; sourceTree = "<group>"; };
 		606EC14C164036BF00253E88 /* MAApplicationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAApplicationSettings.m; sourceTree = "<group>"; };
+		607A00411BB9C99F0088E59D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		609025EB163BD39700368F94 /* MABookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABookService.h; sourceTree = "<group>"; };
 		609025EC163BD39700368F94 /* MABookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABookService.m; sourceTree = "<group>"; };
 		609061321BB9A602008AFA26 /* iphone-listen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-listen.png"; path = "Assets/Graphics/iPhone/iphone-listen.png"; sourceTree = SOURCE_ROOT; };
@@ -301,6 +308,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607A00441BB9C9BD0088E59D /* SystemConfiguration.framework in Frameworks */,
+				607A00431BB9C9AE0088E59D /* MediaPlayer.framework in Frameworks */,
+				607A00421BB9C99F0088E59D /* libxml2.tbd in Frameworks */,
+				607A00401BB9C9860088E59D /* AVFoundation.framework in Frameworks */,
+				607A003F1BB9C97F0088E59D /* AudioToolbox.framework in Frameworks */,
+				607A003E1BB9C97B0088E59D /* CFNetwork.framework in Frameworks */,
 				60E6D73618D445130069DD80 /* XCTest.framework in Frameworks */,
 				604D7AAD163A8274004867AE /* UIKit.framework in Frameworks */,
 				604D7AAE163A8274004867AE /* Foundation.framework in Frameworks */,
@@ -453,6 +466,7 @@
 		604D7A86163A8273004867AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				607A00411BB9C99F0088E59D /* libxml2.tbd */,
 				60430F261BB9647B00C595EB /* SystemConfiguration.framework */,
 				60430F241BB9643E00C595EB /* MediaPlayer.framework */,
 				60430F221BB9643000C595EB /* AVFoundation.framework */,
@@ -654,7 +668,7 @@
 			attributes = {
 				CLASSPREFIX = MA;
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Matias Muhonen";
 			};
 			buildConfigurationList = 604D7A7D163A8273004867AE /* Build configuration list for PBXProject "Raamattu" */;
@@ -895,6 +909,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -949,6 +964,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.muhonen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/**";
@@ -971,6 +987,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.muhonen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/**";
@@ -992,9 +1009,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Raamattu/Raamattu-Prefix.pch";
 				INFOPLIST_FILE = "RaamattuTests/RaamattuTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.muhonen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/**";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/** ${SDKROOT}/usr/include/libxml2";
 			};
 			name = Debug;
 		};
@@ -1012,9 +1030,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Raamattu/Raamattu-Prefix.pch";
 				INFOPLIST_FILE = "RaamattuTests/RaamattuTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.muhonen.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/**";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/** ${SDKROOT}/usr/include/libxml2";
 			};
 			name = Release;
 		};

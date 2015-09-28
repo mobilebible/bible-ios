@@ -264,6 +264,48 @@
     
     _stream = [[FSAudioStream alloc] init];
     [_stream playFromURL:[NSURL URLWithString:[NSString stringWithFormat:@ BIBLE_CDN_URL "/%lu/%lu.mp3", (unsigned long)self.book.identifier + 1, (unsigned long)self.chapter + 1]]];
+    _stream.onStateChange = ^(FSAudioStreamState state) {
+        switch (state) {
+            case kFsAudioStreamRetrievingURL:
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+                break;
+                
+            case kFsAudioStreamStopped:
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+                break;
+                
+            case kFsAudioStreamBuffering:
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+                break;
+                
+            case kFsAudioStreamSeeking:
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+                break;
+                
+            case kFsAudioStreamPlaying:
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+                break;
+                
+            case kFsAudioStreamFailed:
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+                break;
+                
+            case kFsAudioStreamPlaybackCompleted:
+                break;
+                
+            case kFsAudioStreamRetryingStarted:
+                break;
+                
+            case kFsAudioStreamRetryingSucceeded:
+                break;
+                
+            case kFsAudioStreamRetryingFailed:
+                break;
+                
+            default:
+                break;
+        }
+    };
     _stream.onFailure = ^(FSAudioStreamError error, NSString *errorDescription) {
         NSMutableString *message = [[NSMutableString alloc] init];
         [message appendString:NSLocalizedString(@"Unable to stream the chapter", @"")];
