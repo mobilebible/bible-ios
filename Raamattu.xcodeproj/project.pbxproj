@@ -90,9 +90,9 @@
 		607A003E1BB9C97B0088E59D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F1E1BB9642400C595EB /* CFNetwork.framework */; };
 		607A003F1BB9C97F0088E59D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F201BB9642900C595EB /* AudioToolbox.framework */; };
 		607A00401BB9C9860088E59D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F221BB9643000C595EB /* AVFoundation.framework */; };
-		607A00421BB9C99F0088E59D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 607A00411BB9C99F0088E59D /* libxml2.tbd */; };
 		607A00431BB9C9AE0088E59D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F241BB9643E00C595EB /* MediaPlayer.framework */; };
 		607A00441BB9C9BD0088E59D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F261BB9647B00C595EB /* SystemConfiguration.framework */; };
+		607A00471BB9CC110088E59D /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607A00451BB9CBF00088E59D /* libxml2.2.dylib */; };
 		609025ED163BD39700368F94 /* MABookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 609025EC163BD39700368F94 /* MABookService.m */; };
 		609061341BB9A602008AFA26 /* iphone-listen.png in Resources */ = {isa = PBXBuildFile; fileRef = 609061321BB9A602008AFA26 /* iphone-listen.png */; settings = {ASSET_TAGS = (); }; };
 		609061351BB9A602008AFA26 /* iphone-listen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 609061331BB9A602008AFA26 /* iphone-listen@2x.png */; settings = {ASSET_TAGS = (); }; };
@@ -245,6 +245,7 @@
 		606EC14B164036BE00253E88 /* MAApplicationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAApplicationSettings.h; sourceTree = "<group>"; };
 		606EC14C164036BF00253E88 /* MAApplicationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAApplicationSettings.m; sourceTree = "<group>"; };
 		607A00411BB9C99F0088E59D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		607A00451BB9CBF00088E59D /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
 		609025EB163BD39700368F94 /* MABookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABookService.h; sourceTree = "<group>"; };
 		609025EC163BD39700368F94 /* MABookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABookService.m; sourceTree = "<group>"; };
 		609061321BB9A602008AFA26 /* iphone-listen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-listen.png"; path = "Assets/Graphics/iPhone/iphone-listen.png"; sourceTree = SOURCE_ROOT; };
@@ -308,9 +309,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607A00471BB9CC110088E59D /* libxml2.2.dylib in Frameworks */,
 				607A00441BB9C9BD0088E59D /* SystemConfiguration.framework in Frameworks */,
 				607A00431BB9C9AE0088E59D /* MediaPlayer.framework in Frameworks */,
-				607A00421BB9C99F0088E59D /* libxml2.tbd in Frameworks */,
 				607A00401BB9C9860088E59D /* AVFoundation.framework in Frameworks */,
 				607A003F1BB9C97F0088E59D /* AudioToolbox.framework in Frameworks */,
 				607A003E1BB9C97B0088E59D /* CFNetwork.framework in Frameworks */,
@@ -466,6 +467,7 @@
 		604D7A86163A8273004867AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				607A00451BB9CBF00088E59D /* libxml2.2.dylib */,
 				607A00411BB9C99F0088E59D /* libxml2.tbd */,
 				60430F261BB9647B00C595EB /* SystemConfiguration.framework */,
 				60430F241BB9643E00C595EB /* MediaPlayer.framework */,
