@@ -22,6 +22,8 @@
 #import "MANoteListViewController.h"
 #import "MANoteEditViewController.h"
 
+#import "FSAudioStream.h"
+
 //#define DEBUG_TEXTVIEW_LAYOUT 1
 
 @interface MABibleViewController ()
@@ -38,6 +40,7 @@
 @property (readonly) UIFont *boldFont;
 @property (readonly) UIFont *symbolFont;
 @property (readonly) UIActivityViewController *activityViewController;
+@property (readonly) FSAudioStream *stream;
 
 - (void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer;
 - (void)handlePinchGesture:(UIPinchGestureRecognizer *)recognizer;
@@ -137,6 +140,8 @@
 {
     [super viewDidDisappear:animated];
     
+    _stream = nil;
+    
     [_loadingView removeView], _loadingView = nil;
 }
 
@@ -148,6 +153,28 @@
     
     MAApplicationSettings *settings = [MAApplicationSettings sharedApplicationSettings];
     self.nightReadingMode = settings.nightReadingMode;
+    
+    UIImage *listenImage = [UIImage imageNamed:@"iphone-listen.png"];
+    UIButton *listenButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    listenButton.bounds = CGRectMake(0, 0, 30, 25);
+    [listenButton setImage:listenImage forState:UIControlStateNormal];
+    
+    UIImage *nightModeImage = [UIImage imageNamed:@"iphone-nightmode.png"];
+    UIButton *nightModeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    nightModeButton.bounds = CGRectMake(0, 0, 30, 25);
+    [nightModeButton setImage:nightModeImage forState:UIControlStateNormal];
+    
+    [listenButton addTarget:self action:@selector(listenCurrentChapter:) forControlEvents:UIControlEventTouchUpInside];
+    [nightModeButton addTarget:self action:@selector(toggleNightMode:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *listenBarButton = [[UIBarButtonItem alloc] initWithCustomView:listenButton];
+    UIBarButtonItem *nightModeBarButton = [[UIBarButtonItem alloc] initWithCustomView:nightModeButton];
+    
+    if (settings.bibleTranslation == MABibleTranslationRaamattu1938) {
+        self.navigationItem.rightBarButtonItems = @[nightModeBarButton, listenBarButton];
+    } else {
+        self.navigationItem.rightBarButtonItems = @[nightModeBarButton];
+    }
     
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -205,6 +232,8 @@
     [self animateTransition:NO];
     
     [self addHistoryItem];
+    
+    _stream = nil;
 }
 
 - (IBAction)viewNextChapter:(id)sender
@@ -224,6 +253,28 @@
     [self animateTransition:YES];
     
     [self addHistoryItem];
+    
+    _stream = nil;
+}
+
+- (IBAction)listenCurrentChapter:(id)sender
+{
+    
+#define BIBLE_CDN_URL "http://localhost:8000"
+    
+    _stream = [[FSAudioStream alloc] init];
+    [_stream playFromURL:[NSURL URLWithString:[NSString stringWithFormat:@ BIBLE_CDN_URL "/%lu/%lu.mp3", (unsigned long)self.book.identifier + 1, (unsigned long)self.chapter + 1]]];
+    _stream.onFailure = ^(FSAudioStreamError error, NSString *errorDescription) {
+        NSMutableString *message = [[NSMutableString alloc] init];
+        [message appendString:NSLocalizedString(@"Unable to stream the chapter", @"")];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"")
+                                                        message:message
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    };
 }
 
 - (IBAction)showNotes:(id)sender

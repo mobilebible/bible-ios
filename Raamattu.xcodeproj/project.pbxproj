@@ -31,6 +31,45 @@
 		603F7E4316A5395800CAED3A /* MANoteEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603F7E4216A5395800CAED3A /* MANoteEditViewController.m */; };
 		604295F8163BF380005AA33D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604295F7163BF380005AA33D /* MobileCoreServices.framework */; };
 		604295FC163BF4B6005AA33D /* MABibleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604295FB163BF4B6005AA33D /* MABibleViewController.m */; };
+		60430EEC1BB963D400C595EB /* audio_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EDA1BB963D400C595EB /* audio_queue.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EED1BB963D400C595EB /* audio_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EDA1BB963D400C595EB /* audio_queue.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EEE1BB963D400C595EB /* audio_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EDC1BB963D400C595EB /* audio_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EEF1BB963D400C595EB /* audio_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EDC1BB963D400C595EB /* audio_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF01BB963D400C595EB /* caching_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EDE1BB963D400C595EB /* caching_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF11BB963D400C595EB /* caching_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EDE1BB963D400C595EB /* caching_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF21BB963D400C595EB /* file_output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE01BB963D400C595EB /* file_output.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF31BB963D400C595EB /* file_output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE01BB963D400C595EB /* file_output.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF41BB963D400C595EB /* file_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE21BB963D400C595EB /* file_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF51BB963D400C595EB /* file_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE21BB963D400C595EB /* file_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF61BB963D400C595EB /* http_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE41BB963D400C595EB /* http_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF71BB963D400C595EB /* http_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE41BB963D400C595EB /* http_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF81BB963D400C595EB /* id3_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE61BB963D400C595EB /* id3_parser.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EF91BB963D400C595EB /* id3_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE61BB963D400C595EB /* id3_parser.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EFA1BB963D400C595EB /* input_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE81BB963D400C595EB /* input_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EFB1BB963D400C595EB /* input_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EE81BB963D400C595EB /* input_stream.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EFC1BB963D400C595EB /* stream_configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EEA1BB963D400C595EB /* stream_configuration.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430EFD1BB963D400C595EB /* stream_configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60430EEA1BB963D400C595EB /* stream_configuration.cpp */; settings = {ASSET_TAGS = (); }; };
+		60430F0C1BB963E100C595EB /* FSAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430EFF1BB963E100C595EB /* FSAudioController.m */; settings = {ASSET_TAGS = (); }; };
+		60430F0D1BB963E100C595EB /* FSAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430EFF1BB963E100C595EB /* FSAudioController.m */; settings = {ASSET_TAGS = (); }; };
+		60430F0E1BB963E100C595EB /* FSAudioStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60430F011BB963E100C595EB /* FSAudioStream.mm */; settings = {ASSET_TAGS = (); }; };
+		60430F0F1BB963E100C595EB /* FSAudioStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60430F011BB963E100C595EB /* FSAudioStream.mm */; settings = {ASSET_TAGS = (); }; };
+		60430F101BB963E100C595EB /* FSCheckContentTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F031BB963E100C595EB /* FSCheckContentTypeRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F111BB963E100C595EB /* FSCheckContentTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F031BB963E100C595EB /* FSCheckContentTypeRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F121BB963E100C595EB /* FSParsePlaylistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F051BB963E100C595EB /* FSParsePlaylistRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F131BB963E100C595EB /* FSParsePlaylistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F051BB963E100C595EB /* FSParsePlaylistRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F141BB963E100C595EB /* FSParseRssPodcastFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F071BB963E100C595EB /* FSParseRssPodcastFeedRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F151BB963E100C595EB /* FSParseRssPodcastFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F071BB963E100C595EB /* FSParseRssPodcastFeedRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F161BB963E100C595EB /* FSPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F091BB963E100C595EB /* FSPlaylistItem.m */; settings = {ASSET_TAGS = (); }; };
+		60430F171BB963E100C595EB /* FSPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F091BB963E100C595EB /* FSPlaylistItem.m */; settings = {ASSET_TAGS = (); }; };
+		60430F181BB963E100C595EB /* FSXMLHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F0B1BB963E100C595EB /* FSXMLHttpRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F191BB963E100C595EB /* FSXMLHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F0B1BB963E100C595EB /* FSXMLHttpRequest.m */; settings = {ASSET_TAGS = (); }; };
+		60430F1C1BB963EC00C595EB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F1B1BB963EC00C595EB /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		60430F1D1BB963EC00C595EB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 60430F1B1BB963EC00C595EB /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		60430F1F1BB9642400C595EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F1E1BB9642400C595EB /* CFNetwork.framework */; };
+		60430F211BB9642900C595EB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F201BB9642900C595EB /* AudioToolbox.framework */; };
+		60430F231BB9643000C595EB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F221BB9643000C595EB /* AVFoundation.framework */; };
+		60430F251BB9643E00C595EB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F241BB9643E00C595EB /* MediaPlayer.framework */; };
+		60430F271BB9647B00C595EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60430F261BB9647B00C595EB /* SystemConfiguration.framework */; };
 		604D7A88163A8273004867AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7A87163A8273004867AE /* UIKit.framework */; };
 		604D7A8A163A8273004867AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7A89163A8273004867AE /* Foundation.framework */; };
 		604D7A8C163A8273004867AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604D7A8B163A8273004867AE /* CoreGraphics.framework */; };
@@ -49,6 +88,8 @@
 		606EC14A1640317F00253E88 /* MAHistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 606EC1491640317F00253E88 /* MAHistoryItem.m */; };
 		606EC14D164036BF00253E88 /* MAApplicationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 606EC14C164036BF00253E88 /* MAApplicationSettings.m */; };
 		609025ED163BD39700368F94 /* MABookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 609025EC163BD39700368F94 /* MABookService.m */; };
+		609061341BB9A602008AFA26 /* iphone-listen.png in Resources */ = {isa = PBXBuildFile; fileRef = 609061321BB9A602008AFA26 /* iphone-listen.png */; settings = {ASSET_TAGS = (); }; };
+		609061351BB9A602008AFA26 /* iphone-listen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 609061331BB9A602008AFA26 /* iphone-listen@2x.png */; settings = {ASSET_TAGS = (); }; };
 		60CDCF27177B0540004CAC7C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CDCF26177B0540004CAC7C /* Media.xcassets */; };
 		60DC930316AA9AFB0073C82F /* ipad-notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 60DC930216AA9AFB0073C82F /* ipad-notes.png */; };
 		60DC930516AA9C2D0073C82F /* ipad-notes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60DC930416AA9C2D0073C82F /* ipad-notes@2x.png */; };
@@ -131,6 +172,45 @@
 		604295F7163BF380005AA33D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		604295FA163BF4B6005AA33D /* MABibleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABibleViewController.h; sourceTree = "<group>"; };
 		604295FB163BF4B6005AA33D /* MABibleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABibleViewController.m; sourceTree = "<group>"; };
+		60430EDA1BB963D400C595EB /* audio_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio_queue.cpp; path = Externals/FreeStreamer/astreamer/audio_queue.cpp; sourceTree = "<group>"; };
+		60430EDB1BB963D400C595EB /* audio_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audio_queue.h; path = Externals/FreeStreamer/astreamer/audio_queue.h; sourceTree = "<group>"; };
+		60430EDC1BB963D400C595EB /* audio_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio_stream.cpp; path = Externals/FreeStreamer/astreamer/audio_stream.cpp; sourceTree = "<group>"; };
+		60430EDD1BB963D400C595EB /* audio_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audio_stream.h; path = Externals/FreeStreamer/astreamer/audio_stream.h; sourceTree = "<group>"; };
+		60430EDE1BB963D400C595EB /* caching_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = caching_stream.cpp; path = Externals/FreeStreamer/astreamer/caching_stream.cpp; sourceTree = "<group>"; };
+		60430EDF1BB963D400C595EB /* caching_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = caching_stream.h; path = Externals/FreeStreamer/astreamer/caching_stream.h; sourceTree = "<group>"; };
+		60430EE01BB963D400C595EB /* file_output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file_output.cpp; path = Externals/FreeStreamer/astreamer/file_output.cpp; sourceTree = "<group>"; };
+		60430EE11BB963D400C595EB /* file_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = file_output.h; path = Externals/FreeStreamer/astreamer/file_output.h; sourceTree = "<group>"; };
+		60430EE21BB963D400C595EB /* file_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file_stream.cpp; path = Externals/FreeStreamer/astreamer/file_stream.cpp; sourceTree = "<group>"; };
+		60430EE31BB963D400C595EB /* file_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = file_stream.h; path = Externals/FreeStreamer/astreamer/file_stream.h; sourceTree = "<group>"; };
+		60430EE41BB963D400C595EB /* http_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = http_stream.cpp; path = Externals/FreeStreamer/astreamer/http_stream.cpp; sourceTree = "<group>"; };
+		60430EE51BB963D400C595EB /* http_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = http_stream.h; path = Externals/FreeStreamer/astreamer/http_stream.h; sourceTree = "<group>"; };
+		60430EE61BB963D400C595EB /* id3_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = id3_parser.cpp; path = Externals/FreeStreamer/astreamer/id3_parser.cpp; sourceTree = "<group>"; };
+		60430EE71BB963D400C595EB /* id3_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = id3_parser.h; path = Externals/FreeStreamer/astreamer/id3_parser.h; sourceTree = "<group>"; };
+		60430EE81BB963D400C595EB /* input_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = input_stream.cpp; path = Externals/FreeStreamer/astreamer/input_stream.cpp; sourceTree = "<group>"; };
+		60430EE91BB963D400C595EB /* input_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = input_stream.h; path = Externals/FreeStreamer/astreamer/input_stream.h; sourceTree = "<group>"; };
+		60430EEA1BB963D400C595EB /* stream_configuration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stream_configuration.cpp; path = Externals/FreeStreamer/astreamer/stream_configuration.cpp; sourceTree = "<group>"; };
+		60430EEB1BB963D400C595EB /* stream_configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_configuration.h; path = Externals/FreeStreamer/astreamer/stream_configuration.h; sourceTree = "<group>"; };
+		60430EFE1BB963E100C595EB /* FSAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSAudioController.h; path = Externals/FreeStreamer/Common/FSAudioController.h; sourceTree = "<group>"; };
+		60430EFF1BB963E100C595EB /* FSAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSAudioController.m; path = Externals/FreeStreamer/Common/FSAudioController.m; sourceTree = "<group>"; };
+		60430F001BB963E100C595EB /* FSAudioStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSAudioStream.h; path = Externals/FreeStreamer/Common/FSAudioStream.h; sourceTree = "<group>"; };
+		60430F011BB963E100C595EB /* FSAudioStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FSAudioStream.mm; path = Externals/FreeStreamer/Common/FSAudioStream.mm; sourceTree = "<group>"; };
+		60430F021BB963E100C595EB /* FSCheckContentTypeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCheckContentTypeRequest.h; path = Externals/FreeStreamer/Common/FSCheckContentTypeRequest.h; sourceTree = "<group>"; };
+		60430F031BB963E100C595EB /* FSCheckContentTypeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCheckContentTypeRequest.m; path = Externals/FreeStreamer/Common/FSCheckContentTypeRequest.m; sourceTree = "<group>"; };
+		60430F041BB963E100C595EB /* FSParsePlaylistRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSParsePlaylistRequest.h; path = Externals/FreeStreamer/Common/FSParsePlaylistRequest.h; sourceTree = "<group>"; };
+		60430F051BB963E100C595EB /* FSParsePlaylistRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSParsePlaylistRequest.m; path = Externals/FreeStreamer/Common/FSParsePlaylistRequest.m; sourceTree = "<group>"; };
+		60430F061BB963E100C595EB /* FSParseRssPodcastFeedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSParseRssPodcastFeedRequest.h; path = Externals/FreeStreamer/Common/FSParseRssPodcastFeedRequest.h; sourceTree = "<group>"; };
+		60430F071BB963E100C595EB /* FSParseRssPodcastFeedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSParseRssPodcastFeedRequest.m; path = Externals/FreeStreamer/Common/FSParseRssPodcastFeedRequest.m; sourceTree = "<group>"; };
+		60430F081BB963E100C595EB /* FSPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSPlaylistItem.h; path = Externals/FreeStreamer/Common/FSPlaylistItem.h; sourceTree = "<group>"; };
+		60430F091BB963E100C595EB /* FSPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSPlaylistItem.m; path = Externals/FreeStreamer/Common/FSPlaylistItem.m; sourceTree = "<group>"; };
+		60430F0A1BB963E100C595EB /* FSXMLHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSXMLHttpRequest.h; path = Externals/FreeStreamer/Common/FSXMLHttpRequest.h; sourceTree = "<group>"; };
+		60430F0B1BB963E100C595EB /* FSXMLHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSXMLHttpRequest.m; path = Externals/FreeStreamer/Common/FSXMLHttpRequest.m; sourceTree = "<group>"; };
+		60430F1A1BB963EC00C595EB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Externals/Reachability/Reachability.h; sourceTree = "<group>"; };
+		60430F1B1BB963EC00C595EB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Externals/Reachability/Reachability.m; sourceTree = "<group>"; };
+		60430F1E1BB9642400C595EB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		60430F201BB9642900C595EB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		60430F221BB9643000C595EB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		60430F241BB9643E00C595EB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		60430F261BB9647B00C595EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		604D7A83163A8273004867AE /* Raamattu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raamattu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604D7A87163A8273004867AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		604D7A89163A8273004867AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +240,8 @@
 		606EC14C164036BF00253E88 /* MAApplicationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAApplicationSettings.m; sourceTree = "<group>"; };
 		609025EB163BD39700368F94 /* MABookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABookService.h; sourceTree = "<group>"; };
 		609025EC163BD39700368F94 /* MABookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABookService.m; sourceTree = "<group>"; };
+		609061321BB9A602008AFA26 /* iphone-listen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-listen.png"; path = "Assets/Graphics/iPhone/iphone-listen.png"; sourceTree = SOURCE_ROOT; };
+		609061331BB9A602008AFA26 /* iphone-listen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-listen@2x.png"; path = "Assets/Graphics/iPhone/iphone-listen@2x.png"; sourceTree = SOURCE_ROOT; };
 		60CDCF26177B0540004CAC7C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Raamattu/Media.xcassets; sourceTree = "<group>"; };
 		60DC930216AA9AFB0073C82F /* ipad-notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-notes.png"; path = "Assets/Graphics/iPad/ipad-notes.png"; sourceTree = SOURCE_ROOT; };
 		60DC930416AA9C2D0073C82F /* ipad-notes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-notes@2x.png"; path = "Assets/Graphics/iPad/ipad-notes@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -198,6 +280,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60430F271BB9647B00C595EB /* SystemConfiguration.framework in Frameworks */,
+				60430F251BB9643E00C595EB /* MediaPlayer.framework in Frameworks */,
+				60430F231BB9643000C595EB /* AVFoundation.framework in Frameworks */,
+				60430F211BB9642900C595EB /* AudioToolbox.framework in Frameworks */,
+				60430F1F1BB9642400C595EB /* CFNetwork.framework in Frameworks */,
 				602A664F17DCEF6500AD7DF7 /* libsqlite3.dylib in Frameworks */,
 				604295F8163BF380005AA33D /* MobileCoreServices.framework in Frameworks */,
 				60228587163BE368009EB43F /* CoreText.framework in Frameworks */,
@@ -276,10 +363,76 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		60430E961BB9630800C595EB /* FreeStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				60430E981BB9631A00C595EB /* Common */,
+				60430E971BB9631400C595EB /* astreamer */,
+			);
+			name = FreeStreamer;
+			sourceTree = "<group>";
+		};
+		60430E971BB9631400C595EB /* astreamer */ = {
+			isa = PBXGroup;
+			children = (
+				60430EDA1BB963D400C595EB /* audio_queue.cpp */,
+				60430EDB1BB963D400C595EB /* audio_queue.h */,
+				60430EDC1BB963D400C595EB /* audio_stream.cpp */,
+				60430EDD1BB963D400C595EB /* audio_stream.h */,
+				60430EDE1BB963D400C595EB /* caching_stream.cpp */,
+				60430EDF1BB963D400C595EB /* caching_stream.h */,
+				60430EE01BB963D400C595EB /* file_output.cpp */,
+				60430EE11BB963D400C595EB /* file_output.h */,
+				60430EE21BB963D400C595EB /* file_stream.cpp */,
+				60430EE31BB963D400C595EB /* file_stream.h */,
+				60430EE41BB963D400C595EB /* http_stream.cpp */,
+				60430EE51BB963D400C595EB /* http_stream.h */,
+				60430EE61BB963D400C595EB /* id3_parser.cpp */,
+				60430EE71BB963D400C595EB /* id3_parser.h */,
+				60430EE81BB963D400C595EB /* input_stream.cpp */,
+				60430EE91BB963D400C595EB /* input_stream.h */,
+				60430EEA1BB963D400C595EB /* stream_configuration.cpp */,
+				60430EEB1BB963D400C595EB /* stream_configuration.h */,
+			);
+			name = astreamer;
+			sourceTree = "<group>";
+		};
+		60430E981BB9631A00C595EB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				60430EFE1BB963E100C595EB /* FSAudioController.h */,
+				60430EFF1BB963E100C595EB /* FSAudioController.m */,
+				60430F001BB963E100C595EB /* FSAudioStream.h */,
+				60430F011BB963E100C595EB /* FSAudioStream.mm */,
+				60430F021BB963E100C595EB /* FSCheckContentTypeRequest.h */,
+				60430F031BB963E100C595EB /* FSCheckContentTypeRequest.m */,
+				60430F041BB963E100C595EB /* FSParsePlaylistRequest.h */,
+				60430F051BB963E100C595EB /* FSParsePlaylistRequest.m */,
+				60430F061BB963E100C595EB /* FSParseRssPodcastFeedRequest.h */,
+				60430F071BB963E100C595EB /* FSParseRssPodcastFeedRequest.m */,
+				60430F081BB963E100C595EB /* FSPlaylistItem.h */,
+				60430F091BB963E100C595EB /* FSPlaylistItem.m */,
+				60430F0A1BB963E100C595EB /* FSXMLHttpRequest.h */,
+				60430F0B1BB963E100C595EB /* FSXMLHttpRequest.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		60430ED91BB9637F00C595EB /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				60430F1A1BB963EC00C595EB /* Reachability.h */,
+				60430F1B1BB963EC00C595EB /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		604D7A78163A8273004867AE = {
 			isa = PBXGroup;
 			children = (
 				60CDCF26177B0540004CAC7C /* Media.xcassets */,
+				60430ED91BB9637F00C595EB /* Reachability */,
+				60430E961BB9630800C595EB /* FreeStreamer */,
 				600CAB6D1643FD3100F2A8D7 /* fmdb */,
 				604D7A8D163A8273004867AE /* Raamattu */,
 				604D7AB1163A8274004867AE /* RaamattuTests */,
@@ -300,6 +453,11 @@
 		604D7A86163A8273004867AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60430F261BB9647B00C595EB /* SystemConfiguration.framework */,
+				60430F241BB9643E00C595EB /* MediaPlayer.framework */,
+				60430F221BB9643000C595EB /* AVFoundation.framework */,
+				60430F201BB9642900C595EB /* AudioToolbox.framework */,
+				60430F1E1BB9642400C595EB /* CFNetwork.framework */,
 				60E6D73518D445130069DD80 /* XCTest.framework */,
 				602A664E17DCEF6500AD7DF7 /* libsqlite3.dylib */,
 				604295F7163BF380005AA33D /* MobileCoreServices.framework */,
@@ -407,6 +565,8 @@
 		60E2BA2016A425B400FA6DE5 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				609061321BB9A602008AFA26 /* iphone-listen.png */,
+				609061331BB9A602008AFA26 /* iphone-listen@2x.png */,
 				60F9FE5616B0367C00CA9BA6 /* iphone-nightmode.png */,
 				60F9FE5716B0367C00CA9BA6 /* iphone-nightmode@2x.png */,
 				60E2BA2616A425D900FA6DE5 /* toolbar-left.png */,
@@ -526,6 +686,7 @@
 				604D7A92163A8274004867AE /* InfoPlist.strings in Resources */,
 				604D7AA4163A8274004867AE /* MainWindow.xib in Resources */,
 				6014B212163C805600F108F0 /* Localizable.strings in Resources */,
+				609061351BB9A602008AFA26 /* iphone-listen@2x.png in Resources */,
 				60374D04164462BA0018BC55 /* Raamattu1938.db in Resources */,
 				603773C9164940310019E166 /* MainWindow-iPad.xib in Resources */,
 				600AC7071649540700BFF562 /* MainWindow-iPad.strings in Resources */,
@@ -543,6 +704,7 @@
 				60E2BA2D16A425D900FA6DE5 /* toolbar-notes.png in Resources */,
 				60E2BA3016A426F000FA6DE5 /* fontawesome-webfont.ttf in Resources */,
 				60DC930316AA9AFB0073C82F /* ipad-notes.png in Resources */,
+				609061341BB9A602008AFA26 /* iphone-listen.png in Resources */,
 				60DC930516AA9C2D0073C82F /* ipad-notes@2x.png in Resources */,
 				60F9FE5816B0367C00CA9BA6 /* iphone-nightmode.png in Resources */,
 				60F9FE5916B0367C00CA9BA6 /* iphone-nightmode@2x.png in Resources */,
@@ -582,30 +744,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60430EFA1BB963D400C595EB /* input_stream.cpp in Sources */,
+				60430EEE1BB963D400C595EB /* audio_stream.cpp in Sources */,
 				600CAB801643FD9F00F2A8D7 /* FMDatabase.m in Sources */,
+				60430F0E1BB963E100C595EB /* FSAudioStream.mm in Sources */,
 				600CAB821643FD9F00F2A8D7 /* FMDatabaseAdditions.m in Sources */,
+				60430EF01BB963D400C595EB /* caching_stream.cpp in Sources */,
 				600CAB841643FD9F00F2A8D7 /* FMDatabasePool.m in Sources */,
 				600CAB861643FD9F00F2A8D7 /* FMDatabaseQueue.m in Sources */,
 				600CAB881643FD9F00F2A8D7 /* FMResultSet.m in Sources */,
 				604D7A94163A8274004867AE /* main.m in Sources */,
 				604D7A98163A8274004867AE /* MAAppDelegate.m in Sources */,
 				604D7AC5163A831F004867AE /* MAChapter.m in Sources */,
+				60430EF61BB963D400C595EB /* http_stream.cpp in Sources */,
 				604D7AC8163A84DA004867AE /* MAChapterIndex.m in Sources */,
+				60430F1C1BB963EC00C595EB /* Reachability.m in Sources */,
+				60430EF41BB963D400C595EB /* file_stream.cpp in Sources */,
+				60430F101BB963E100C595EB /* FSCheckContentTypeRequest.m in Sources */,
+				60430EF81BB963D400C595EB /* id3_parser.cpp in Sources */,
 				604D7ACD163A8E2C004867AE /* MABook.m in Sources */,
 				609025ED163BD39700368F94 /* MABookService.m in Sources */,
 				604295FC163BF4B6005AA33D /* MABibleViewController.m in Sources */,
 				60E9804B163C128D0076764B /* MABookListViewController.m in Sources */,
 				60E98052163C32DC0076764B /* MAChapterListViewController.m in Sources */,
 				600F3444163ECF3300258AAC /* MAAboutViewController.m in Sources */,
+				60430F0C1BB963E100C595EB /* FSAudioController.m in Sources */,
 				60078218163FE9C900C00D55 /* MALoadingView.m in Sources */,
+				60430F161BB963E100C595EB /* FSPlaylistItem.m in Sources */,
+				60430EF21BB963D400C595EB /* file_output.cpp in Sources */,
+				60430F141BB963E100C595EB /* FSParseRssPodcastFeedRequest.m in Sources */,
+				60430F121BB963E100C595EB /* FSParsePlaylistRequest.m in Sources */,
 				6007821B163FFC1400C00D55 /* MATechnicalInformationViewController.m in Sources */,
 				606EC147164030CB00253E88 /* MAHistoryListViewController.m in Sources */,
+				60430EEC1BB963D400C595EB /* audio_queue.cpp in Sources */,
+				60430F181BB963E100C595EB /* FSXMLHttpRequest.m in Sources */,
 				606EC14A1640317F00253E88 /* MAHistoryItem.m in Sources */,
 				606EC14D164036BF00253E88 /* MAApplicationSettings.m in Sources */,
 				60374D0716446C880018BC55 /* MABibleSearchViewController.m in Sources */,
 				60374D0A16446FB70018BC55 /* MASearchResult.m in Sources */,
 				603EA29A168EED1900706C41 /* MABibleTranslationListViewController.m in Sources */,
 				60E2BA3316A4294200FA6DE5 /* MANoteService.m in Sources */,
+				60430EFC1BB963D400C595EB /* stream_configuration.cpp in Sources */,
 				60E2BA3916A4486900FA6DE5 /* MANote.m in Sources */,
 				60E2BA3C16A44FFE00FA6DE5 /* MANoteListViewController.m in Sources */,
 				603F7E4316A5395800CAED3A /* MANoteEditViewController.m in Sources */,
@@ -616,7 +795,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60430EFB1BB963D400C595EB /* input_stream.cpp in Sources */,
+				60430F191BB963E100C595EB /* FSXMLHttpRequest.m in Sources */,
+				60430EED1BB963D400C595EB /* audio_queue.cpp in Sources */,
+				60430F111BB963E100C595EB /* FSCheckContentTypeRequest.m in Sources */,
+				60430EF51BB963D400C595EB /* file_stream.cpp in Sources */,
+				60430F151BB963E100C595EB /* FSParseRssPodcastFeedRequest.m in Sources */,
+				60430F171BB963E100C595EB /* FSPlaylistItem.m in Sources */,
+				60430EF71BB963D400C595EB /* http_stream.cpp in Sources */,
+				60430EF91BB963D400C595EB /* id3_parser.cpp in Sources */,
+				60430F131BB963E100C595EB /* FSParsePlaylistRequest.m in Sources */,
+				60430EEF1BB963D400C595EB /* audio_stream.cpp in Sources */,
 				604D7AB9163A8274004867AE /* RaamattuTests.m in Sources */,
+				60430F0F1BB963E100C595EB /* FSAudioStream.mm in Sources */,
+				60430F0D1BB963E100C595EB /* FSAudioController.m in Sources */,
+				60430EF11BB963D400C595EB /* caching_stream.cpp in Sources */,
+				60430EFD1BB963D400C595EB /* stream_configuration.cpp in Sources */,
+				60430F1D1BB963EC00C595EB /* Reachability.m in Sources */,
+				60430EF31BB963D400C595EB /* file_output.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

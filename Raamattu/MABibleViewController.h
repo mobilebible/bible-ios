@@ -60,6 +60,7 @@
 
 - (IBAction)viewPreviousChapter:(id)sender;
 - (IBAction)viewNextChapter:(id)sender;
+- (IBAction)listenCurrentChapter:(id)sender;
 - (IBAction)showNotes:(id)sender;
 - (IBAction)showActionMenu:(id)sender;
 - (IBAction)toggleNightMode:(id)sender;

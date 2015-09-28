@@ -24,3 +24,5 @@
 
 "Bible is not available: " = "Raamattu ei luettavissa: ";
 "Error" = "Virhe";
+
+"Unable to stream the chapter" = "Luvun toistaminen ei onnistunut";
