@@ -1,6 +1,5 @@
-[![Build Status](https://api.travis-ci.org/mobilebible//bible-ios.png?branch=master)](https://travis-ci.org/mobilebible/bible-ios)
-
-This is the source code for the App Store distributed Raamattu+ app for iOS. It is
+This repository contains most of the source code (some assets cannot be redistributed due to copyright
+reasons) for the App Store distributed Raamattu+ app for iOS. It is
 a simple bible reader primarily designed for reading the Finnish Bible, but,
 there is nothing preventing to use the app for other languages (currently
 we ship the NET translation besides the Finnish translation).
@@ -45,4 +44,6 @@ Register your database in MAConstants.h by creating a new translation identifier
 Modify MABookService.m (setTranslation and translationNameByIdentifier) to
 register the name of your database.
 
-For any questions, you can contact me by email at <mmu@iki.fi>
+The source code is provided in hopes that it could be helpful for implementing
+a similar application. For questions, unfortunately I don't have time for private
+email support, so usually the best way to get help is to interact with Github issues.
